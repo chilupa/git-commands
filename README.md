@@ -11,9 +11,8 @@ Example
 bab4e1e updated js code
 ```
 
-```
-git log -2 
-```
+> git log -2 
+
 Gives you latest two commits in the below format.
 
 Example
@@ -31,15 +30,13 @@ Date:   Tue Jan 29 16:13:34 2019 -0600
     updated js code
 ```
 
-```
-git reset HEAD~1
-```
-Deletes the commit history and unstages the files from the previous commit. 
+
+> git reset HEAD~1
+
+Deletes the commit history and unstages the files from the previous commit. In other words, it uncommits. 
 
 ## For macOS
-If you want to close the commit message window on the terminal, hit Escape key once you enter your commit message. 
-Then, type `:wq!` and hit *Enter*
-It will save your commit with the message entered. 
-`:` enters the commandline mode when you press it after you hit the Escape key
-`w` is write which means Save
-`q` is quit
+If you want to close the commit message window on the terminal, hit Escape key once you enter your commit message. Then, type `:wq!` and hit *Enter*. It will save your commit with the message entered. 
+- `:` enters the commandline mode when you press it after you hit the Escape key
+- `w` is write which means Save
+- `q` is quit
