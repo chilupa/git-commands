@@ -1,8 +1,8 @@
 # git-commands :computer:	
 
-```
-git log -2 --oneline
-```
+
+> git log -2 --oneline
+
 Gives you the latest two commits in oneline format. You can specity the log number of your choice. 
 
 Example
