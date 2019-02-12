@@ -40,3 +40,50 @@ If you want to close the commit message window on the terminal, hit Escape key o
 - `:` enters the commandline mode when you press it after you hit the Escape key
 - `w` is write which means Save
 - `q` is quit
+
+## Uploading your Local Repository Code to Remote Repository
+1. Initialize your local repository with the `init` command
+```
+git init
+```
+2. Add your files to staging with the `add` command
+```
+git add . 
+```
+3. Commit your changes 
+```
+git commit -m "version 1.0"
+```
+4. Add your remote repository url. The below command will set your remote url 
+```
+git remote add origin REMOTE REPOSITORY URL ( HTTPS format )  
+```
+5. Verify the new remote url 
+```
+git remote -v
+```
+6. Push the code to your remote remository
+```
+git push -u origin master
+```
+<hr>
+
+If you see this issue while pushing the code  
+
+```
+$ git push -u origin master
+To https://bitbucket.org/xx/xxx.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://teckbyt@bitbucket.org/xx/xxx.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+```
+
+<hr>
+
+use git `pull` command with `--allow-unrelated-history` and push the code. 
+```
+git pull origin master --allow-unrelated-histories
+```
+
