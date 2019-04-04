@@ -87,3 +87,18 @@ use git `pull` command with `--allow-unrelated-history` and push the code.
 git pull origin master --allow-unrelated-histories
 ```
 
+## How to add remote URL to your local repository
+Someday, you might come across a situtation where your project in one source code hosting platform will be migrated to other platform. In my case, the source code of our project has been migrated to GitLab from OneStash. So, you will need to change the remote URL of your local project.
+
+First, check the remote URLs
+```
+git remote -v
+```
+Secondly, remove the previous remote URL
+```
+git remote remove origin 
+```
+Finally, add the current remote URL
+```
+git remote add origin <.git url of source code>
+```
